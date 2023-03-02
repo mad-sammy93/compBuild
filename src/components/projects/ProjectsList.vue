@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import { ref, computed, watch } from 'vue';
+import { ref, computed, watch, toRefs } from 'vue';
 import ProjectItem from './ProjectItem.vue';
 
 export default {
@@ -54,7 +54,12 @@ export default {
       }, 300);
     });
 
-    watch(props, function () {
+    // const porpsToRefs = toRefs(props);
+    // const user = porpsToRefs.user;
+
+    const { user } = toRefs(props); //object desctructuring
+
+    watch( user, function () {
       enteredSearchTerm.value = '';
     });
 
