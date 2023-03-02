@@ -99,7 +99,7 @@ export default {
   //     this.enteredSearchTerm = val;
   //   },
   // },
-  watch: {
+  // watch: {
     // enteredSearchTerm(val) {
     //   setTimeout(() => {
     //     if (val === this.enteredSearchTerm) {
@@ -107,11 +107,11 @@ export default {
     //     }
     //   }, 300);
     // },
-    user() {
-      this.enteredSearchTerm = '';
-    },
-  },
-};
+    // user() {
+      // this.enteredSearchTerm = '';
+    // },
+  // }
+}
 </script>
 
 <style scoped>
